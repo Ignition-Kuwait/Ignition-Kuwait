@@ -8,3 +8,9 @@ To inspire local youth in Kuwait to pursue space technology and space exploratio
 To aid in the creation of Kuwait's first space program.
 ## Values
 To instill the belief and faith in youth leadership, to accomplish the endeavor of Space.
+
+# Installation
+* Install [Jekyll](https://jekyllrb.com/docs/installation/).
+* Run `bundle install`.
+* Run `bundle exec jekyll serve`.
+* Navigate to `http://localhost:4000`.
