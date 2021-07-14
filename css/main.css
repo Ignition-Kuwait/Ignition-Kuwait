@@ -1,0 +1,11 @@
+body .sidebar {
+  display: none;
+}
+
+body.show-sidebar .sidebar {
+  display: block;
+}
+
+body.show-sidebar>*:not(.sidebar) {
+  width: calc(100% - 280px);
+}
