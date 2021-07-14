@@ -2,14 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: " en" }}" class="h-100">
 {%- include head.html -%}
 
-<body class="d-flex flex-column h-100">
-  
+<body class="d-flex flex-column text-white h-100">
+
   {%- include header.html -%}
 
-  {%- include top-carousel.html -%}
-
   <main class="page-content" aria-label="Content">
-    <div class="wrapper container-fluid">
+    <div class="wrapper">
       {{ content }}
     </div>
   </main>
