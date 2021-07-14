@@ -1,4 +1,9 @@
-body .sidebar {
+html,
+body {
+  background: #000;
+}
+
+.sidebar {
   display: none;
 }
 
