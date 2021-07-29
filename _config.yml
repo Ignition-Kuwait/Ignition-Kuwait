@@ -26,6 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ignition-kuwait.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  ignition-kuwait
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
 
 # Build settings
 theme: minima
