@@ -1,5 +1,5 @@
-const sidebarButton = document.getElementById('sidebarButton')
+// const sidebarButton = document.getElementById('sidebarButton')
 
-sidebarButton.addEventListener('click', event => {
-    document.body.classList.toggle('show-sidebar')
-})
+// sidebarButton.addEventListener('click', event => {
+//   document.body.classList.toggle('show-sidebar')
+// })

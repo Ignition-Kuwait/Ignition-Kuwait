@@ -15,6 +15,14 @@ body.show-sidebar>*:not(.sidebar) {
   width: calc(100% - 280px);
 }
 
+/* header {
+  background: rgba(0, 0, 0, .5);
+} */
+
+/* article.post {
+  margin-top: 100px;
+} */
+
 .page-content .wrapper {
   position: fixed;
   width: 100%;
@@ -23,6 +31,7 @@ body.show-sidebar>*:not(.sidebar) {
 }
 
 section {
+  min-height: 750px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -32,11 +41,22 @@ section {
 .background {
   position: absolute;
   height: 100%;
-  width:100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #000;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: justify;
+}
+
+.rounded-icon {
+  border-radius: 50%;
+  border: 2px solid #999;
+  padding: 25px;
+}
+
+.nav-item.rounded {
+  background: red;
 }

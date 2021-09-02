@@ -1,23 +1,118 @@
-<section>
-  <div class="background" style="background-image: url('/img/Mercury.jpg');">
-    <div class="jumbotron jumbotron-fluid"
-      style="position: absolute; width: 320px; top: calc(50% - 100px); left: calc(50% - 160px); background: rgba(0,0,0,.5);">
-      <div class="container">
-        <h1 class="display-4">Under Construction</h1>
-        <p class="lead">We are working on it, please check back at a later date.</p>
+<section id="home">
+  <div class="background" style="background-image: url('/img/Astronaut.jpg');">
+    <div class="jumbotron jumbotron-fluid rounded position-absolute top-50 start-50 translate-middle"
+      style="background: rgba(0,0,0,.5);">
+      <div class="container text-center">
+        <h1 class="display-4">Welcome to <span class="text-uppercase fw-bold">Ignition</span>!</h1>
+        <p class="lead">From Kuwait to infinity and beyond.</p>
       </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="background" style="background-image: url('/img/Venus.jpg');">
+<section id="about">
+  <div class="background" style="background-image: url('/img/Stars.jpg');">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h1 class="display-4 text-center">About <span class="text-uppercase fw-bold">Ignition</span>!</h1>
+      <p>
+        Ignition is a local chapter of the Mars society. We inspire locals in Kuwait to pursue space technology
+        and
+        space exploration projects, by organizing public outreach programs to foster a deep interest in Mars and space
+        exploration, we also promote broad international support for government-funded Mars research and exploration,
+        and
+        advocate the establishment of commercial space ventures, that will help in achieving space exploration in
+        Kuwait.
+      </p>
+    </div>
   </div>
 </section>
-<section>
-  <div class="background" style="background-image: url('/img/Earth.jpg');">
+<section id="mission">
+  <div class="background text-center" style="background-image: url('/img/Stars.jpg');">
+    <div class="position-absolute top-50 start-50 translate-middle container-fluid">
+      <h1 class="display-4 text-center">Core Principals</h1>
+      <p>
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="text-center">
+            <svg class="bi rounded-icon" width="100" height="100" fill="currentColor">
+              <use xlink:href="/img/icons.svg#spacecraft"></use>
+            </svg>
+          </div>
+          <h6 class="display-6 text-center">Mission</h6>
+          <p>
+            To inspire local youth in Kuwait to pursue space technology and space exploration projects.
+          </p>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <svg class="bi rounded-icon" width="100" height="100" fill="currentColor">
+              <use xlink:href="/img/icons.svg#target"></use>
+            </svg>
+          </div>
+          <h6 class="display-6 text-center">Vision</h6>
+          <p>
+            To aid in the creation of Kuwait's first space program.
+          </p>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <svg class="bi rounded-icon" width="100" height="100" fill="currentColor">
+              <use xlink:href="/img/icons.svg#handshake"></use>
+            </svg>
+          </div>
+          <h6 class="display-6 text-center">Values</h6>
+          <p>
+            To instill the belief and faith in youth leadership, to accomplish the endeavor of Space.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<section>
-  <div class="background" style="background-image: url('/img/Mars.jpg');">
+<section id="unsdg">
+  <div class="background" style="background-image: url('/img/Stars.jpg');">
+    <div class="position-absolute top-50 start-50 translate-middle container-fluid">
+      <div class="text-center">
+        <img class="img-fluid" src="/img/unsdg-banner.png" alt="UNSDG Banner" loading="lazy">
+      </div>
+      <p class="text-center display-6">
+        <span class="text-uppercase fw-bold">Ignition</span>’s contribution to the United Nations Sustainable Development Goals
+      </p>
+      <div class="row align-items-start">
+        <div class="col"><img class="img-fluid" src="/img/unsdg-4.png" alt="UNSDG 4" loading="lazy"></div>
+        <div class="col"><img class="img-fluid" src="/img/unsdg-8.png" alt="UNSDG 8" loading="lazy"></div>
+        <div class="col"><img class="img-fluid" src="/img/unsdg-9.png" alt="UNSDG 9" loading="lazy"></div>
+        <div class="col"><img class="img-fluid" src="/img/unsdg-10.png" alt="UNSDG 10" loading="lazy"></div>
+        <div class="col"><img class="img-fluid" src="/img/unsdg-13.png" alt="UNSDG 13" loading="lazy"></div>
+        <div class="col"><img class="img-fluid" src="/img/unsdg-17.png" alt="UNSDG 17" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact-us">
+  <div class="background" style="background-image: url('/img/Stars.jpg');">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h1 class="display-4 text-center">Contact us</h1>
+      <form class="row g-3" action="https://formsubmit.co/marssocietykuwait@gmail.com" method="POST">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Yuri Gagarin">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="cadet@space.com">
+        </div>
+        <div class="col-12">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="I ♥ Space">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea type="text" class="form-control" id="message" placeholder="Take me to space."></textarea>
+        </div>
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-primary w-100">Send to Mission Control</button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
