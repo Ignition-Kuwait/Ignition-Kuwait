@@ -95,15 +95,19 @@
       <form class="row g-3" action="https://formsubmit.co/marssocietykuwait@gmail.com" method="POST">
         <div class="col-md-6">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Yuri Gagarin">
+          <input type="text" name="name" class="form-control" placeholder="Yuri Gagarin" required>
+          <input type="hidden" name="_next" value="https://aalkhulaifi.github.io/thankyou.html">
+          <input type="hidden" name="_captcha" value="false">
+
         </div>
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="cadet@space.com">
+          <input type="email" name="email" class="form-control" placeholder="cadet@space.com" required>
         </div>
         <div class="col-12">
           <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" placeholder="I ♥ Space">
+          <input type="hidden" class="form-control" name="_subject" value="I ♥ Space" >
+
         </div>
         <div class="col-12">
           <label for="message" class="form-label">Message</label>
