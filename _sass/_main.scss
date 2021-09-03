@@ -11,6 +11,10 @@ body.show-sidebar .sidebar {
   display: block;
 }
 
+body.show-sidebar a[href="/#home"]>span.fs-4 {
+  display: none;
+}
+
 body.show-sidebar>*:not(.sidebar) {
   width: calc(100% - 280px);
 }
