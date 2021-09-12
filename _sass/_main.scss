@@ -49,6 +49,7 @@ section {
 
 .background {
   position: absolute;
+  min-height: 750px;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -73,4 +74,19 @@ section {
 
 .ignition {
   font-family: 'Orbitron', sans-serif;
+}
+
+img.unsdg {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+@media (max-width:767px) {
+  section {
+    min-height: 1250px;
+  }
+
+  background {
+    min-height: 1250px;
+  }
 }
