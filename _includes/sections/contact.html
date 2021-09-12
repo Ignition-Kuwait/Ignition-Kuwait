@@ -1,0 +1,31 @@
+<section id="contact">
+  <div class="background" style="background-image: url('/img/Stars.jpg');">
+    <div class="position-absolute top-50 start-50 translate-middle container">
+      <h1 class="display-4 text-center">Contact us</h1>
+      <form class="row g-3" action="https://formsubmit.co/marssocietykuwait@gmail.com" method="POST">
+        <div class="col-md-6">
+          <label for="nameField" class="form-label">Name</label>
+          <input type="text" id="nameField" name="name" class="form-control" placeholder="Yuri Gagarin" required>
+        </div>
+        <div class="col-md-6">
+          <label for="emailField" class="form-label">Email</label>
+          <input type="email" id="emailField" name="email" class="form-control" placeholder="cadet@space.com" required>
+        </div>
+        <div class="col-12">
+          <label for="subjectField" class="form-label">Subject</label>
+          <input type="text" id="subjectField" name="subject" class="form-control" placeholder="I ♥ Space" required>
+        </div>
+        <div class="col-12">
+          <label for="messageField" class="form-label">Message</label>
+          <textarea rows="10" id="messageField" name="message" class="form-control" placeholder="Take me to space."
+            required></textarea>
+        </div>
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-primary w-100">Send to Mission Control</button>
+        </div>
+        <input type="hidden" name="_next" value="https://ignitionkwt.org/thankyou/">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+    </div>
+  </div>
+</section>
