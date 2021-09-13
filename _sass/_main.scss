@@ -1,11 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
+
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --brand-font: 'Orbitron', sans-serif;
+  --sidebar-width: 280px;
+}
+
+::selection {
+  background-color: #ffffff;
+}
+
+.ignition {
+  font-family: var(--brand-font);
+}
+
 html,
 body {
   background: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
 }
 
 .sidebar {
   display: none;
+}
+
+.sidebar>div {
+  width: var(--sidebar-width);
 }
 
 body.show-sidebar .sidebar {
@@ -17,16 +37,8 @@ body.show-sidebar a[href="/#home"]>span.fs-4 {
 }
 
 body.show-sidebar>*:not(.sidebar) {
-  width: calc(100% - 280px);
+  width: calc(100% - var(--sidebar-width));
 }
-
-/* header {
-  background: rgba(0, 0, 0, .5);
-} */
-
-/* article.post {
-  margin-top: 100px;
-} */
 
 .page-content .wrapper {
   position: fixed;
@@ -72,10 +84,6 @@ section {
   background: red;
 }
 
-.ignition {
-  font-family: 'Orbitron', sans-serif;
-}
-
 img.unsdg {
   max-width: 150px;
   max-height: 150px;
@@ -86,7 +94,7 @@ img.unsdg {
     min-height: 1250px;
   }
 
-  background {
+  .background {
     min-height: 1250px;
   }
 }
