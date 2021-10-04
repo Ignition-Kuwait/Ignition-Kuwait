@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
-  --main-font: 'Poppins', sans-serif;
-  --brand-font: 'Orbitron', sans-serif;
+  --main-font: 'Lato', sans-serif;
+  --brand-font: 'Lato', sans-serif;
   --sidebar-width: 280px;
+  --button-color: #fff;
 }
 
 ::selection {
@@ -18,6 +19,11 @@ html,
 body {
   background: #000;
   font-family: var(--main-font);
+}
+
+.top-header,
+.sidebar {
+  letter-spacing: 5px;
 }
 
 .sidebar {
@@ -60,6 +66,7 @@ section {
 }
 
 .background {
+  --bg: url(/img/Stars.jpg);
   position: absolute;
   min-height: 750px;
   height: 100%;
@@ -71,6 +78,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: justify;
+  background-image: linear-gradient(#000, transparent, #000), var(--bg);
 }
 
 .rounded-icon {
@@ -81,7 +89,7 @@ section {
 
 .nav-item.rounded,
 .nav-link.rounded {
-  background: red;
+  background: var(--button-color);
 }
 
 img.unsdg {

@@ -12,7 +12,7 @@ const sections = {
   contact: document.getElementById('contact')
 }
 
-document.querySelectorAll('.top-header > a:first-child, .top-header .nav-link, .sidebar .nav-link').forEach(section => {
+document.querySelectorAll('a[href^="/#"]').forEach(section => {
   section.addEventListener('click', event => {
     const target = event.currentTarget.getAttribute('href')?.replace('/#', '')
     if (!sections[target]) { return }
@@ -26,3 +26,18 @@ document.querySelectorAll('.top-header > a:first-child, .top-header .nav-link, .
   })
 })
 
+const principals = [
+  document.querySelector('#mission .col:nth-child(1)'),
+  document.querySelector('#mission .col:nth-child(2)'),
+  document.querySelector('#mission .col:nth-child(3)'),
+]
+const closingSummary = document.querySelector('#mission .row>.fade')
+
+principals.forEach(principal => {
+  principal.addEventListener('click', event => {
+    principal.querySelector('.fade')?.classList.toggle('show')
+    const showSummary = principals.every(principal => principal.querySelector('.fade')?.classList.contains('show'))
+    if (showSummary) setTimeout(() => { closingSummary.classList.add('show') }, 250)
+    else closingSummary.classList.remove('show')
+  })
+})
