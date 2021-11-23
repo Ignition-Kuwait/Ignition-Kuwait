@@ -9,6 +9,7 @@ const sections = {
   home: document.getElementById('home'),
   about: document.getElementById('about'),
   mission: document.getElementById('mission'),
+  gallery: document.getElementById('gallery'),
   contact: document.getElementById('contact')
 }
 
