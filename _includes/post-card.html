@@ -1,0 +1,75 @@
+<div class="container-fluid shift"> 
+    <style>
+        .blog-img{
+            width:100%;
+            border-radius: 15px;
+        }
+        .shift{
+            margin-top: 6em;
+        }
+    </style>
+    <script defer src="../js/post.js"> </script>
+    <template id="blog-post">
+        <style>
+            .card{
+                background-color:#030308;
+                color:#f9fafb;
+                padding:32px;
+                margin-bottom: 2em;
+                max-width: 90ch;
+            }
+            .rounded{
+                border-radius: 22px;
+            }
+            .card-body{
+            }
+            .blog--img-container{
+                display: flex;
+                justify-content: center;
+            }
+            .socials--container{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+            div.blog-body{
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                max-width: 80ch;
+            }
+            h2{
+                text-align: center;
+            }
+            @media only screen and (max-width: 1000px) {
+                .card-body {
+                    grid-template-columns: unset;
+                }
+            }
+        </style>
+        <div class="card rounded">
+            <div class="card-body">
+                <div class="blog--card">
+                    <h2><slot name="blog-heading">Default heading</slot></h2>
+                    <div class="blog-body">
+                        <p><slot name="blog-body">Default post text</slot></p>
+                    </div>
+                    <div class="blog--img-container">
+                        <slot name="blog-img"></slot>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </template>
+
+      <div class="row">
+        <div class="col-12">
+            <blog-post>
+                <h2 slot="blog-heading">Test 1 Heading</h2>
+                <p slot="blog-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos reiciendis consectetur excepturi odit, eos esse itaque provident, nemo velit repudiandae architecto sequi sunt quo? Aliquam atque odit repellat vel ratione! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat possimus atque aut? Ab animi hic molestias esse similique! Enim quasi molestias mollitia alias laudantium inventore laborum aut sit doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deserunt voluptas, ab sit impedit voluptates doloribus odio est. Incidunt dolor autem dolorum dolorem doloribus expedita labore eaque laborum itaque iure!</p> 
+                <img class="blog-img" slot="blog-img" src="../img/blog-imgs/img1.JPG"/>
+            </blog-card>
+        </div>
+    </div>
+</div>

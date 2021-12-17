@@ -1,0 +1,113 @@
+<div class="container-fluid shift">
+    <style>
+        .blog-img{
+            width:100%;
+            border-radius: 15px;
+        }
+        .shift{
+            margin-top: 6em;
+        }
+    </style>
+    <script defer src="../js/blog-cards.js"> </script>
+    <template id="blog-card">
+        <style>
+            .card{
+                background-color:#030308;
+                color:#f9fafb;
+                padding:32px;
+                margin-bottom: 2em;
+                cursor: pointer;
+            }
+            .rounded{
+                border-radius: 22px;
+            }
+            .card-body{
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-column-gap: 2em;
+            }
+            .blog--img-container{
+                width: 100%;
+                position: relative;
+                bottom:3em;
+            }
+            .socials--container{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+            .social{
+                width:2em;
+                background-color: #0c101a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 2em;
+                border-radius: 5px;
+                margin-right: 1em;
+            }
+            svg{
+                width: 1em;
+                height: 1em;
+            }
+            .none{
+                display:none;
+            }
+            @media only screen and (max-width: 1000px) {
+                .card-body {
+                    grid-template-columns: unset;
+                }
+            }
+        </style>
+        <div class="card rounded">
+            <div class="card-body">
+                <div class="blog--img-container">
+                    <slot name="blog-img"></slot>
+                </div>
+                <div class="blog--card">
+                    <h2><slot name="blog-heading">Default heading</slot></h2>
+                    <div class="blog-preview-container">
+                        <p><slot name="blog-preview">Default post text</slot></p>
+                    </div>
+                    <div class="socials--container none">
+                        <div class="social">
+                            <svg alt="twitter">
+                                <use xlink:href="../img/socials.svg#twitter"></use>
+                            </svg>
+                        </div>
+                        <div class="social">
+                            <svg alt="instagram">
+                                <use xlink:href="../img/socials.svg#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+      </template>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-12">
+            <blog-card>
+              <img class="blog-img" slot="blog-img" src="../img/blog-imgs/img1.JPG"/>
+              <h2 slot="blog-heading">Test 1 Heading</h2>
+              <p slot="blog-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos reiciendis consectetur excepturi odit, eos esse itaque provident, nemo velit repudiandae architecto sequi sunt quo? Aliquam atque odit repellat vel ratione! Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>         
+            </blog-card>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-12">
+            <blog-card>
+                <img class="blog-img" slot="blog-img" src="../img/blog-imgs/img2.JPG"/>
+                <h2 slot="blog-heading">Test 2 Heading</h2>
+                <p slot="blog-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos reiciendis consectetur excepturi odit, eos esse itaque provident, nemo velit repudiandae architecto sequi sunt quo? Aliquam atque odit repellat vel ratione! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>        
+            </blog-card>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-12">
+            <blog-card>
+                <img class="blog-img" slot="blog-img" src="../img/blog-imgs/img3.JPG"/>
+                <h2 slot="blog-heading">Test 3 Heading</h2>
+                <p slot="blog-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos reiciendis consectetur excepturi odit, eos esse itaque provident, nemo velit repudiandae architecto sequi sunt quo? Aliquam atque odit repellat vel ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>        
+            </blog-card>
+        </div>
+      </div>
+</div>
+
